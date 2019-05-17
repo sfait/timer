@@ -2,3 +2,76 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/lake.jpg") no-repeat center/cover;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header {
+    padding: 1rem 3rem;
+    color: #FF6814;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header::before {
+    content: "";
+    width: 100%;
+    border-bottom: 4px solid #58585B;
+    position: absolute;
+    bottom: 0;
+    animation-name: stretch;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+
+.wrapper {
+    width: 70%;
+    max-width: 800px;
+    color: #444;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    margin-bottom: 2rem;
+}
+
+.info span {
+    font-weight: bold;
+}
+
+.timer {
+    color: #FF6814;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.error {
+    color: #df3f2a;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* animations */
+@keyframes stretch {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 100%;
+    }
+}
