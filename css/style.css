@@ -1,6 +1,6 @@
-/* general */
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -8,9 +8,15 @@ body {
     height: 100vh;
     background: url("../img/lake.jpg") no-repeat center/cover;
     font-family: 'Lato', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -30,9 +36,12 @@ body {
     border-bottom: 4px solid #58585B;
     position: absolute;
     bottom: 0;
-    animation-name: stretch;
-    animation-duration: 4s;
-    animation-timing-function: ease-in;
+    -webkit-animation-name: stretch;
+            animation-name: stretch;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
 }
 
 .wrapper {
@@ -40,10 +49,19 @@ body {
     max-width: 800px;
     color: #58585B;
     line-height: 1.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .info {
@@ -67,6 +85,14 @@ body {
 }
 
 /* animations */
+@-webkit-keyframes stretch {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 100%;
+    }
+}
 @keyframes stretch {
     0% {
         width: 30%;
