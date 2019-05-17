@@ -16,7 +16,7 @@ body {
 
 .header {
     padding: 1rem 3rem;
-    color: #FF6814;
+    color: #58585B;
     text-transform: uppercase;
     letter-spacing: 2px;
     position: absolute;
@@ -38,7 +38,7 @@ body {
 .wrapper {
     width: 70%;
     max-width: 800px;
-    color: #444;
+    color: #58585B;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
